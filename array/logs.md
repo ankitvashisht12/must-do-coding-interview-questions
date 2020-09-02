@@ -3,7 +3,7 @@
 | Status | Question-No.   |   Name   |      Tag      |  Description |
 |-----------|----------|:-------------:|:-------------:|------:|
 | Done | 1 | Subarray with given sum | easy | - |
-| Revisit | 2 | Count the triplets | easy, interesting | can we do it in O(N) or O(NlogN) ? |
+| Revise | 2 | Count the triplets | easy, interesting | can we do it in O(N) or O(NlogN) ? |
 | Done | 3 | kadane algorithm | easy | found `LLONG_MIN` |
 | Pending | 4 | find missing number | easy | do it with XOR |
 | Revise | 5  | Merge two sorted arrays | easy, interesting | - |
