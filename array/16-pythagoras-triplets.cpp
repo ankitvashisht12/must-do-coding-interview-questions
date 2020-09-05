@@ -13,7 +13,6 @@ bool has_pythagoras_triplets(const vector<ll>& X, int n){
 	for(int i =0; i< n-1; i++){
 		for(int j = i+1; j < n; j++){
 			if(_s.count((X[i]+ X[j]))){
-				cout<<i<<" "<<j<<endl;
 				return true;
 			}
 		}
