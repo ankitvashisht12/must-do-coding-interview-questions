@@ -45,21 +45,61 @@ int main(){
 	return 0;
 }
 
+// Algorithm : 
+
+// 1. we can count the length by iterating over the list
+// 2. we need middle position of the list. we can get it by dividing the length by 2.
+// 3. return middle node's data
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 int getMiddle(Node *head)
-{
-   Node* temp = head;
-   int len = 0;
-   while(temp != NULL){
-        temp = temp -> next;
-        len++;
-   }
+{	
+
+	// temporary pointer pointing to head.
+	Node* temp = head;
+	int len = 0;
+
+	// iterating and calculating the length.
+	while(temp != NULL){
+	    temp = temp -> next;
+	    len++;
+	}
    
-   int mid = len/2;
+	// dividing the length by 2 to get the middle position of the list.
+	int mid = len/2;
   
-   while(mid){
-       head = head->next;
-       mid--;
-   }
-   
-   return head->data;
+	// iterating till middle element of the list.
+	while(mid){
+		head = head->next;
+		mid--;
+	}
+	
+	return head->data;
 }

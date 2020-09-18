@@ -53,7 +53,7 @@ int main(){
 struct Node* rotateLinkedList(Node *head, int k)
 {
    
-     if(!head)
+    if(!head)
         return head;
         
     Node* prev = NULL;
