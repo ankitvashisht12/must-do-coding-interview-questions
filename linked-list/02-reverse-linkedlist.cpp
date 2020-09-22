@@ -48,17 +48,56 @@ int main(){
 	return 0;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 struct Node* reverseLinkedList(Node *head)
 {
    
     if(!head || head->next == NULL)
         return head;
         
-    
+   //  1. initialize 3 pointers i.e previous, current and next pointer
+   //  2. set prev = NULL and curr = head.
    Node* prev = NULL;
    Node* curr = head;
    Node* nextPtr;
    
+
+   //3. In while loop : 
+   //		3.a ) set nextPtr = curr -> next
+   // 		3.b ) set curr->next = prev
+   //       3.c ) set prev = curr 
+   //		3.d ) set curr = nextPtr
    while(curr){
        nextPtr = curr->next;
        curr->next = prev;
@@ -66,5 +105,6 @@ struct Node* reverseLinkedList(Node *head)
        curr = nextPtr;
    }
    
+   // 4. return previous pointer.
    return prev;
 }
